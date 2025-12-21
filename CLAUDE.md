@@ -134,6 +134,19 @@ User query → RAGSystem.query()
 → Return (answer, sources)
 ```
 
+## Visual Documentation
+
+**Detailed flow diagrams available:**
+- **[Complete Query Flow](docs/query-flow-diagram.md)** - Comprehensive sequence diagram with all components, exact line numbers, and data transformations
+- **[Simplified Query Flow](docs/query-flow-simplified.md)** - Quick reference with 5-step overview and debugging guide
+
+These diagrams show:
+- The two-phase Claude API pattern (tool decision → execution → final answer)
+- All 10 components and their interactions
+- Complete data flow from user input to displayed response
+- ChromaDB's two-collection architecture in action
+- Performance breakdown (~2-3s total latency)
+
 ## Key Architectural Decisions
 
 ### Why Two ChromaDB Collections?
